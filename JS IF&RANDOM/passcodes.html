@@ -1,0 +1,71 @@
+<script>
+
+// passcodes by jimin
+
+// //criteria #1
+// //input - ask user for a valid code
+// let code1 = +prompt("Enter Code 1:");
+
+// //process - test the provided code
+//let msg;
+//if (code1 > 0) {
+//msg=`CORRECT PASSCODE (${code1})`;
+//}else {
+//msg=`INCORRECT PASSCODE (${code1})`;
+//}
+
+// //criteria #2
+// //input - ask user for a valid code
+// let code1 = +prompt("Enter Code 1:");
+
+// //process - test the provided code
+// let msg;
+// if (code1 < 0 || code1 > 10) {
+// msg=`CORRECT PASSCODE (${code1})`;
+// }else {
+// msg=`INCORRECT PASSCODE (${code1})`;
+// }
+
+// //criteria #3
+// //input - ask user for a valid code
+// let code1 = +prompt("Enter Code 1:");
+
+// //process - test the provided code
+// let msg;
+// if (code1 >= 50 && code1 <= 75) {
+// msg=`CORRECT PASSCODE (${code1})`;
+// }else {
+// msg=`INCORRECT PASSCODE (${code1})`;
+// }
+
+// //criteria #4
+// //input - Code 1 is a 3-character word or Code 2 is between 1 and 5, inclusive
+// let code1 = prompt("Enter Code 1:");
+// let code2 = +prompt("Enter code 2:");
+
+// //process - test the provided code
+// let msg;
+// if (code1.lenght ==3 || (code2 >= 1 && code2 <= 5)) {
+// msg=`CORRECT PASSCODE (${code1}-${code2})`;
+// }else {
+// msg=`INCORRECT PASSCODE (${code1}-${code2})`;
+// }
+
+//criteria #5
+//input -Code 1 is negative and Code 2 is zero and Code 3 is positive.
+let code1 = +prompt("Enter Code 1:");
+let code2 = +prompt("Enter code 2:");
+let code3 = +prompt("Enter code 3:");
+
+//process - test the provided code
+let msg;
+if (code1<0 && code2 == 0 && code3 > 0 ) {
+msg=`CORRECT PASSCODE (${code1}-${code2}-${code3})`;
+}else {
+msg=`INCORRECT PASSCODE (${code1}-${code2}-${code3})`;
+}
+
+//output
+alert(msg);
+
+</script>

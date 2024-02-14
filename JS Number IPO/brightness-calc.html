@@ -1,0 +1,18 @@
+<script>
+
+// brightness Calc by jimin
+
+//input
+let r = +prompt("Enter r-value of color:");
+let g = +prompt("Enter g-value of color:");
+let b = +prompt("Enter b-value of color:");
+
+//process
+let brightness = Math.sqrt(0.299*(r)**2+0.587*(g)**2+0.114*(b)**2);
+let msg= `brightness of rgb(${r}, ${g}, ${b}) is ${brightness}`;
+
+//output
+alert(msg);
+
+
+</script>

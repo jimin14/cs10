@@ -1,0 +1,56 @@
+<script>
+
+// Coin flip simulator
+
+// let n = 1;
+// while (n <= 10) {
+//     // 50/50 chance of getting heads or tails
+//     let randNum = Math.random();
+//     if (randNum < 0.5) {
+//     console.log(`${n} heads`);
+//     } else {
+//     console.log(`${n} tails`);
+//     }
+//     n = n+1
+// }
+
+let flipcount = 0;
+
+while (true) {
+  flipcount=flipcount + 1;
+  //first coin
+  let coin1;
+  let randNum = Math.random();
+  if (randNum < 0.5) {
+  coin1= "heads";
+  } else {
+    coin1= "tails";
+  }
+
+  //second coin
+  let coin2;
+  randNum = Math.random();
+  if (randNum < 0.5) {
+  coin2= "heads";
+  } else {
+    coin2= "tails";
+  }
+  // third coin
+  let coin3;
+  randNum = Math.random();
+  if (randNum < 0.5) {
+  coin3= "heads";
+  } else {
+    coin3= "tails";
+  }
+  // output results
+  console.log(`${coin1} - ${coin2}-${coin3}`);
+
+  //check out for end condition
+  if (coin1 == "heads" && coin2 == "heads" && coin3 == "heads") {
+    break;
+  }
+}
+console.log(`took ${flipcount} flips to get all heads! `);
+
+</script>

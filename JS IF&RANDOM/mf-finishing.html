@@ -1,0 +1,75 @@
+<script>
+
+//MINECRAFT FISHING SIMULATOR 
+
+//input - ask user for a character
+let char = prompt("enter a character (steve, alex, villager):")
+
+// process - test character
+if (char == "steve") {
+ //fish with steve
+let rand = Math.random();
+ console.log(rand);
+
+ //test random Number to see what fish we caught
+let fish;
+ if(rand < 0.7) {
+  fish = "raw cod";
+ } else if ( rand < 0.9) {
+    fish = "raw salmon";
+ } else if ( rand < 0.95) {
+    fish = "tropical fish";
+ } else {
+    fish= "puffer fish";
+}
+//output
+alert(fish);
+
+
+} else if (char=="alex") {
+ //fish with alex
+let rand = Math.random();
+ console.log(rand);
+ //test random Number to see what fish we caught
+let fish;
+ if(rand < 0.1) {
+  fish = "raw cod";
+ } else if ( rand < 0.2) {
+    fish = "raw salmon";
+ } else if ( rand < 0.5) {
+    fish = "tropical fish";
+ } else {
+    fish= "puffer fish";
+}
+
+//output
+alert(fish);
+
+
+} else if (char=="villager") {
+ //fish with villager
+let rand = Math.random();
+ console.log(rand);
+
+ //test random Number to see what fish we caught
+let fish;
+ if(rand < 0.25) {
+  fish = "raw cod";
+ } else if ( rand < 0.5) {
+    fish = "raw salmon";
+ } else if ( rand < 0.75) {
+    fish = "tropical fish";
+ } else {
+    fish= "puffer fish";
+}
+
+//output
+alert(fish);
+
+} else {
+    //unreconized character
+    console.log("??");
+}
+
+ 
+</script>
